@@ -1,0 +1,121 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #222;
+}
+
+header,
+footer {
+  background-color: #1f3c88;
+  color: white;
+  text-align: center;
+  padding: 24px;
+}
+
+main {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #1f3c88;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #162b61;
+}
+
+#notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.note-card p {
+  margin: 8px 0;
+}
+
+.note-category {
+  font-weight: bold;
+}
+
+.note-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.category-personal {
+  border-left: 6px solid #4caf50;
+}
+
+.category-work {
+  border-left: 6px solid #2196f3;
+}
+
+.category-study {
+  border-left: 6px solid #ff9800;
+}
+
+#error-message {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+  }
+}
