@@ -1,0 +1,7 @@
+# Day 8 Reflection
+
+The most difficult concept in the course was understanding how to prevent two people from buying the same seat when requests arrive at nearly the same time. At first, checking whether a seat was available seemed sufficient, but I learned that two requests can both see the same availability before either one completes. I overcame this by studying database transactions, row locking, conditional updates, and unique constraints. I now understand why the database must make the final decision rather than trusting the browser or a cache.
+
+Based on reviewing my QuickNotes capstone, I would improve the separation between the frontend prototype and the proposed production backend. The practice API demonstrates GET, POST, and DELETE requests, but its changes are not permanently stored. I would add automated tests, improve error handling, and build a real backend connected to PostgreSQL. I would also test the API and documentation together so that the implementation and design remain consistent.
+
+Next, I want to learn more about backend development, database transaction isolation, and load testing. I would like to build a small service that uses PostgreSQL transactions to reserve inventory, then simulate many concurrent users to verify that no item can be sold twice. I also want to learn how monitoring, queues, and deployment tools help applications remain reliable under heavy traffic.
